@@ -181,11 +181,11 @@ function showWinModal() {
     modal.style.display = 'block';
     
     if (currentLevelIndex < GAME_LEVELS.length - 1) {
-        modalMessage.textContent = `Hebat! Anda menyelesaikan ${GAME_LEVELS[currentLevelIndex].name} dalam ${moves} percobaan. Siap untuk level berikutnya?`;
+        modalMessage.textContent = `GG DIKIT LAH ${GAME_LEVELS[currentLevelIndex].name} dalam ${moves} percobaan. SIAP DI NEXT KAN GA BOS?`;
         modalNextBtn.style.display = 'block';
         modalNextBtn.textContent = `Lanjut ke ${GAME_LEVELS[currentLevelIndex + 1].name}`;
     } else {
-        modalMessage.textContent = `Luar Biasa! Anda menyelesaikan SEMUA level Memoriku Antariksa dalam total ${moves} percobaan!`;
+        modalMessage.textContent = `OKE LAH YA NTELESAIN SEMUA LEVEL DALAM TOTAL ${moves} percobaan!`;
         modalNextBtn.style.display = 'none'; // Sembunyikan tombol jika ini level terakhir
     }
 }
@@ -229,4 +229,5 @@ function initGame() {
 modalNextBtn.addEventListener('click', goToNextLevel);
 
 // --- Mulai Game ---
+
 initGame();
